@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!----------------font--------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!----------------icon--------------->
+    <script src="https://kit.fontawesome.com/597642cd3e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/mumu.png" class="logo">
+                <h1 class="text-logo"><span>G</span>avian.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portofolio">Hobby</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>スイちゃんは~!今日もカワイイ!</p>
+                <h1>This is <span>Gavian.</span><br>Your Typical Local Man.</h1>
+            </div>
+        </div>
+    </div>
+<!----------------about--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionate about technology and fuelled by curiosity, I've been exploring
+                        computer and server systems since childhood. Along the way, I've delved into
+                        networking and dipped my toes into programming.
+                        This journey has not only honed my technical skills but instilled in me a love for
+                        learning and adapting to the ever-evolving tech landscape. Now, I wanted to
+                        contribute my skills to organizations or companies, eager to bring fresh, new
+                        perspectives and innovative solutions to the tech realm.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiences')"">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')"">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Electronics</span><br>Computer Hardware (BIOS, OS Install, Config & Troubleshoot)</li>
+                            <li><span>Networking</span><br>Basic Network Engineering (Games Server Host & Virtualization)</li>
+                            <li><span>UI/UX</span><br>Designing Web/App intefaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>System Administrator</span><br>Windows 7 - 11 & Ubuntu Server Linux</li>
+                            <li><span>Virtualization</span><br>VMware Workstation, Oracle VirtualBox</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>High School</span><br>SMK Negeri 46 Jakarta (2018 - 2021)</li>
+                            <li><span>Varsity</span><br>Bakrie University (2021 - present)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------services--------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>As a self-taught programmer, I navigate the world of coding with simplicity in mind, favoring Python for its elegance. While I'm still mastering the basics, I find joy in crafting beautiful web designs, blending functionality with aesthetics to create digital experiences that resonate.</p>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h2>Cybersecurity</h2>
+                    <p>As a novice in cybersecurity, I'm on a journey to fortify digital defenses and protect against online threats. With a growing understanding of security fundamentals, I delve into the world of encryption, network monitoring, and vulnerability assessment, eager to safeguard digital assets and privacy.</p>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>Computer Hardware & Software</h2>
+                    <p>Immersed in the dynamic world of computer hardware and software, I thrive on troubleshooting intricate hardware issues and optimizing system performance. From diagnosing component failures to fine-tuning overclocking configurations, my expertise spans across diverse platforms. Additionally, adept at operating system management, I navigate through intricate software ecosystems, ensuring seamless functionality and security. With a passion for innovation and problem-solving, I continuously explore new technologies, striving to push the boundaries of what's possible in the digital realm.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------portofolio--------------->
+<div id="portofolio">
+    <div class="container">
+        <h1 class="sub-title">My Hobbies</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Swimming</h3>
+                    <p>Swimming has been my passion since childhood. From mastering all swimming strokes to competing in events, it's been a journey of skill and dedication. While I no longer participate in competitive swimming, I continue to embrace the water as a casual swimmer, finding joy and solace in its embrace.</p>
+
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Playing Video Games</h3>
+                    <p>Immersed in the world of video games, I spend countless hours playing and modding. Every day is an adventure, exploring virtual realms and pushing the boundaries of gaming creativity through modification.</p>
+                    <p><br>Games that I've experienced over the years: GTA San Andreas, Rainbow Six Siege, Persona 3 4 & 5, Granblue Fantasy, Ghost of Tsushima, Monster Hunter Rise, Hi-Fi Rush, etc.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Computer Tinkering</h3>
+                    <p>Electronic tinkering fuels my curiosity as I assemble and disassemble PCs, delving into their inner workings. With a passion for overclocking, I push hardware limits, embracing the thrill of optimization and innovation in the digital realm.</p>
+
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!----------------kontakt--------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>arsanautikagavian@example.me</p>
+                <p><i class="fas fa-phone-square-alt"></i>08123456789</p>
+                <div class="social-icons">
+                    <a href="https://github.com/gunzerix"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/gunited17"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/gavian-arsanautika-81516121b/details/education/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>(C) 2024 Copyright Gunzerix. Icon By Kwdify, Splash Art By r/AvillaHenya. Made By GreatStack With <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+<!----------------skript 1--------------->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+<!----------------skript 1--------------->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+</html>
